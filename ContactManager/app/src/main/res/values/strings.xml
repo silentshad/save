@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contact Manager</string>
+    <string name="ask_name">Name</string>
+    <string name="ask_phoneH">Home</string>
+    <string name="ask_phoneP">Mobile</string>
+    <string name="ask_mail">Email</string>
+    <string name="cancel">cancel</string>
+    <string name="submit">submit</string>
+
+    <string name="show_name">Name :</string>
+    <string name="show_phoneH">Home : </string>
+    <string name="show_phoneP">Mobile : </string>
+    <string name="show_mail">Mail : </string>
+
+</resources>

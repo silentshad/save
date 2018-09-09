@@ -1,0 +1,2 @@
+julien boulicaut 2944100
+my AndroidStudio is displaying some weird error saying that it can not import android.app.Activity and such yet the project compile perfectly so I assume it is a problem related to AndroidStudio and not the code.

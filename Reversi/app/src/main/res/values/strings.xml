@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Reversi</string>
+    <string name="black_player">Black:</string>
+    <string name="white_player">White:</string>
+    <string name="turn">Player</string>
+    <string name="restart">Restart</string>
+</resources>

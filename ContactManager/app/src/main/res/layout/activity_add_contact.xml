@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.silentshad.contactmanager.AddContact">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/actionbar"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:onClick="Cancel"
+            android:text="@string/cancel"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:onClick="Submit"
+            android:text="@string/submit"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_name"
+        android:textColorHint="#9e9b9b"
+        android:inputType="textPersonName"
+        android:hint="@string/ask_name"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/actionbar"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_phoneH"
+        android:inputType="phone"
+        android:textColorHint="#9e9b9b"
+        android:hint="@string/ask_phoneH"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:digits="+0123456789"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/enter_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_phoneP"
+        android:inputType="phone"
+        android:textColorHint="#9e9b9b"
+        android:hint="@string/ask_phoneP"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:digits="+0123456789"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/enter_phoneH"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#9e9b9b"
+        android:hint="@string/ask_mail"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/enter_phoneP"
+        />
+
+
+
+
+</RelativeLayout>

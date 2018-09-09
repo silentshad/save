@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.silentshad.contactmanager.EditContact">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/actionbar"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:onClick="Cancel"
+            android:text="@string/cancel"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:onClick="Submit"
+            android:text="@string/submit"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/actionbar"
+        android:id="@+id/edit_name_"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_name"
+            android:textSize="20sp"
+            android:layout_weight="1"
+           />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_name"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColorHint="#9e9b9b"
+            android:inputType="textPersonName"
+            android:hint="@string/ask_name"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/edit_name_"
+        android:id="@+id/edit_phoneH_"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_phoneH"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_phoneH"
+            android:textColorHint="#9e9b9b"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:digits="+0123456789"
+            android:hint="@string/ask_phoneH"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/edit_phoneH_"
+        android:id="@+id/edit_phoneP_"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_phoneP"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_phoneP"
+            android:inputType="phone"
+            android:textColorHint="#9e9b9b"
+            android:maxLines="1"
+            android:digits="+0123456789"
+            android:maxLength="11"
+            android:hint="@string/ask_phoneP"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/edit_phoneP_"
+        android:id="@+id/edit_mail_"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_mail"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:textColorHint="#9e9b9b"
+            android:hint="@string/ask_mail"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

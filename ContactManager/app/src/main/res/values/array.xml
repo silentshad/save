@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="edit_menu">
+        <item>edit</item>
+        <item>delete</item>
+    </string-array>
+
+
+</resources>
